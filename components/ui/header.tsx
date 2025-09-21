@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   return (
@@ -8,17 +9,15 @@ export default function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <Link className="block group" href="/" aria-label="Cruip">
-              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  className="fill-blue-100 group-hover:fill-white transform duration-150 ease-in-out"
-                  d="M12 6v24C5.373 30 0 24.627 0 18S5.373 6 12 6Z"
-                />
-                <path
-                  className="fill-sky-400 group-hover:fill-sky-300 transform duration-150 ease-in-out"
-                  d="M10.807 6.059A10.003 10.003 0 0 1 20 0c5.523 0 10 4.477 10 10 0 4.123-2.496 7.664-6.059 9.193.04-.392.059-.79.059-1.193 0-6.627-5.373-12-12-12-.403 0-.8.02-1.193.059Z"
-                />
-              </svg>
+            <Link className="block group" href="/" aria-label="Applix">
+              <Image
+                src="/images/applix_logo.svg"
+                alt="Applix Logo"
+                width={120}
+                height={33}
+                className="h-8 w-auto"
+                priority
+              />
             </Link>
           </div>
 
@@ -31,7 +30,7 @@ export default function Header() {
                   Sign in
                 </Link>
               </li>
-              <li className="ml-6">
+              {/* <li className="ml-6">
                 <Link className="btn-sm inline-flex items-center text-white bg-gray-900 hover:bg-gray-800 group" href="/schedule-call">
                   Schedule A Call
                   <span className="tracking-normal text-blue-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
@@ -40,7 +39,7 @@ export default function Header() {
                     </svg>
                   </span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
