@@ -3,11 +3,10 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import Illustration from '@/public/images/features-illustration.svg'
-import Carousel01 from '@/public/images/carousel-01.jpg'
-import Carousel02 from '@/public/images/carousel-02.jpg'
-import Carousel03 from '@/public/images/carousel-03.jpg'
-import Carousel04 from '@/public/images/carousel-04.jpg'
-import Carousel05 from '@/public/images/carousel-05.jpg'
+import GrowSales from '@/public/images/GrowـSales.png'
+import Setup from '@/public/images/setup.png'
+import CutCosts from '@/public/images/CutـCosts.png'
+import SaveTime from '@/public/images/save_time.png'
 import Icon01 from '@/public/images/icon-01.svg'
 import Icon02 from '@/public/images/icon-02.svg'
 import Icon03 from '@/public/images/icon-03.svg'
@@ -50,7 +49,8 @@ export default function Features01() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl pb-12 md:pb-16">
-            <h2 className="h2 font-cabinet-grotesk text-white">We bring you high-quality talents from 72+ countries</h2>
+            <h2 className="h2 font-cabinet-grotesk text-white">Why Us</h2>
+            <p className="text-xl text-white">Your shortcut to building a mobile app — faster, easier, and smarter.</p>
           </div>
 
           {/* Carousel */}
@@ -63,51 +63,42 @@ export default function Features01() {
                 <div className="swiper-slide max-w-[446px] h-auto">
                   {/* Image */}
                   <Image
-                    className="w-full aspect-4/3 object-cover h-full"
-                    src={Carousel01}
-                    width="446"
+                    className="w-full aspect-4/3 object-cover h-full rounded-lg border border-gray-200"
+                    src={SaveTime}                    width="446"
                     height="335"
-                    alt="Carousel 01"
+                    alt="Grow Sales"
                   />
                 </div>
                 <div className="swiper-slide max-w-[446px] h-auto">
                   {/* Image */}
                   <Image
-                    className="w-full aspect-4/3 object-cover h-full"
-                    src={Carousel02}
+                    className="w-full aspect-4/3 object-cover h-full rounded-lg border border-gray-200"
+                    src={Setup}
                     width="446"
                     height="335"
-                    alt="Carousel 02"
+                    alt="Setup"
                   />
                 </div>
                 <div className="swiper-slide max-w-[446px] h-auto">
                   {/* Image */}
                   <Image
-                    className="w-full aspect-4/3 object-cover h-full"
-                    src={Carousel03}
+                    className="w-full aspect-4/3 object-cover h-full rounded-lg border border-gray-200"
+                    src={CutCosts}
                     width="446"
                     height="335"
-                    alt="Carousel 03"
+                    alt="Cut Costs"
                   />
                 </div>
                 <div className="swiper-slide max-w-[446px] h-auto">
                   {/* Image */}
                   <Image
-                    className="w-full aspect-4/3 object-cover h-full"
-                    src={Carousel04}
+                    className="w-full aspect-4/3 object-cover h-full rounded-lg border border-gray-200"
+                    
+                    src={GrowSales}
+
                     width="446"
                     height="335"
-                    alt="Carousel 04"
-                  />
-                </div>
-                <div className="swiper-slide max-w-[446px] h-auto">
-                  {/* Image */}
-                  <Image
-                    className="w-full aspect-4/3 object-cover h-full"
-                    src={Carousel05}
-                    width="446"
-                    height="335"
-                    alt="Carousel 05"
+                    alt="Save Time"
                   />
                 </div>
               </div>
@@ -150,8 +141,8 @@ export default function Features01() {
               data-aos="fade-up"
             >
               <Image className="mb-3" src={Icon01} alt="Icon 01" />
-              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Reward Performers</h3>
-              <div className="text-white text-opacity-80">No more endless task or wasted budget. With us, you and your team are taken care of.</div>
+              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Save Time</h3>
+              <div className="text-white text-opacity-80">Go from idea to live app in days instead of months, so you can focus on growing your business.</div>
             </div>
 
             {/* #2 */}
@@ -161,8 +152,8 @@ export default function Features01() {
               data-aos-delay="100"
             >
               <Image className="mb-3" src={Icon02} alt="Icon 02" />
-              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Reward Performers</h3>
-              <div className="text-white text-opacity-80">No more endless task or wasted budget. With us, you and your team are taken care of.</div>
+              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Cut Costs</h3>
+              <div className="text-white text-opacity-80">Avoid expensive developers and agencies by building your app yourself with no code required.</div>
             </div>
 
             {/* #3 */}
@@ -172,8 +163,8 @@ export default function Features01() {
               data-aos-delay="200"
             >
               <Image className="mb-3" src={Icon03} alt="Icon 03" />
-              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Reward Performers</h3>
-              <div className="text-white text-opacity-80">No more endless task or wasted budget. With us, you and your team are taken care of.</div>
+              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Easy Setup</h3>
+              <div className="text-white text-opacity-80">Simply connect your store and use our drag-and-drop tools to design your app without hassle.</div>
             </div>
 
             {/* #4 */}
@@ -183,8 +174,8 @@ export default function Features01() {
               data-aos-delay="300"
             >
               <Image className="mb-3" src={Icon04} alt="Icon 04" />
-              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Reward Performers</h3>
-              <div className="text-white text-opacity-80">No more endless task or wasted budget. With us, you and your team are taken care of.</div>
+              <h3 className="font-cabinet-grotesk font-bold text-lg text-white">Grow Sales</h3>
+              <div className="text-white text-opacity-80">Reach more customers on mobile, send push notifications, and boost your sales effortlessly.</div>
             </div>
           </div>
         </div>
