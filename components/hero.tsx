@@ -17,7 +17,7 @@ export default function Hero() {
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="h1 font-cabinet-grotesk text-white mb-2" data-aos="fade-up">
-              hello from app builder.
+              hello hello from app builder.
             </h1>
             <p className="text-lg md:text-xl text-white text-opacity-80 mb-8" data-aos="fade-up" data-aos-delay="100">
               Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
