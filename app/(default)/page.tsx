@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Home - Talent',
+  title: 'Home - app builder',
   description: 'Page description',
 }
 
