@@ -9,7 +9,7 @@ export default function Features02() {
   const [category, setCategory] = useState<string>('1')
 
   return (
-    <section>
+    <section id="features">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}

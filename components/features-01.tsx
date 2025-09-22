@@ -36,7 +36,7 @@ export default function Features01() {
   }, [])
 
   return (
-    <section className="relative">
+    <section id="why-us" className="relative">
       {/* Bg */}
       <div className="absolute inset-0 bg-blue-600 -z-10" aria-hidden="true" />
 

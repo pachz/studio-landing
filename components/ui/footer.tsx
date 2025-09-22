@@ -1,9 +1,20 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import Illustration from '@/public/images/footer-illustration.svg'
 import ApplixLogo from '@/public/images/applix_logo.svg'
 
 export default function Footer() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
   return (
     <footer className="relative">
       {/* Bg */}
@@ -31,18 +42,30 @@ export default function Footer() {
 
             {/* Simple navigation */}
             <nav className="flex flex-wrap justify-center gap-8">
-              <a className="text-blue-300 hover:text-white transition duration-150 ease-in-out" href="#0">
-                About
-              </a>
-              <a className="text-blue-300 hover:text-white transition duration-150 ease-in-out" href="#0">
-                Services
-              </a>
-              <a className="text-blue-300 hover:text-white transition duration-150 ease-in-out" href="#0">
-                Contact
-              </a>
-              <a className="text-blue-300 hover:text-white transition duration-150 ease-in-out" href="#0">
-                Privacy Policy
-              </a>
+              <button 
+                onClick={() => scrollToSection('how-it-works')}
+                className="text-blue-300 hover:text-white transition duration-150 ease-in-out"
+              >
+                How It Works
+              </button>
+              <button 
+                onClick={() => scrollToSection('why-us')}
+                className="text-blue-300 hover:text-white transition duration-150 ease-in-out"
+              >
+                Why Us
+              </button>
+              <button 
+                onClick={() => scrollToSection('features')}
+                className="text-blue-300 hover:text-white transition duration-150 ease-in-out"
+              >
+                Features
+              </button>
+              <button 
+                onClick={() => scrollToSection('faq')}
+                className="text-blue-300 hover:text-white transition duration-150 ease-in-out"
+              >
+                FAQ
+              </button>
             </nav>
 
             {/* Copyright */}
