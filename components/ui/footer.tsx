@@ -70,7 +70,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <div className="text-sm text-blue-300">
-              © 2024 Applix. All rights reserved.
+              © Applix. All rights reserved.
             </div>
           </div>
         </div>

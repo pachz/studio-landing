@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - app builder',
-  description: 'Page description',
+  title: 'Applix - Build Your Mobile App in Minutes',
+  description: 'Create stunning mobile apps for your business with our no-code platform. Connect your store, design with drag-and-drop, and launch on app stores.',
 }
 
 import Hero from '@/components/hero'
